@@ -1,0 +1,18 @@
+//all linux commands
+
+$ps -> will display the current terminal all foreground and background process list with its pids(process id).
+$ps -el -> shows the long list of all the events
+$pwd -> shoes the path of the process
+$./a.out& -> runs the program in  background process
+$./a.out -> runs the program in  foregorund process
+$fg -> last process which enters into the background process will come first as a foreground process.
+$fg<1> (1-job id) -> it make the particular background process make it as a foreground process.
+$ps -e -> to see all jobs running all terminals/non-terminals.
+$ps -el | grep pts/0 -> to know the status of a forground or background process running under a terminal using another teriminal 
+                        and it shows a selected list.
+$vi/proc/sys/kernal/pid_max -> to know the range of maximum pids
+$kill -19 pid -> used for suspending the process which in foreground/background
+$kill -9 -> used for termination/killed the process which in foreground/background
+$kill -18 -> used for rsume of process which in foreground/background
+$ulimit -u -> to know the number of user processes can be created
+$ulimit -a -> to know the limitation of the processes.
