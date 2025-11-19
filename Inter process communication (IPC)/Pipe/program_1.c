@@ -14,7 +14,7 @@
           if(fork()==0)
           {
               char b[20];
-              read(fd[0],b,sizeof(b));
+              read(fd[0],b,sizeof(b));  //fd[0] -> read end
               printf("in child reading the string : %s\n",b);
           }
           else
@@ -22,7 +22,7 @@
               char a[20];
               printf("Enter the string in parent: ");
               scanf("%s",a);
-              write(fd[1],a,strlen(a)+1);
+              write(fd[1],a,strlen(a)+1);  //fd[1] -> write end
           }
   }
 
