@@ -22,7 +22,7 @@ else
 {
 char a[20];
 printf("enter the string in parent\n");
-scnaf("%s",a);
+scanf("%s",a);
 write(fd[1],a,strlen(a)+1);  //fd[1] -> used for write end
 }
 }
