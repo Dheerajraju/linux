@@ -18,7 +18,7 @@ char b[20];
 read(fd[0]=%d,b,sizeof(b));  //fd[0] -> used for read end
 printf("in child reading the string=%s\n");
 }
-else
+else 
 {
 char a[20];
 printf("enter the string in parent\n");
